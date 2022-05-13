@@ -1,0 +1,37 @@
+<p>table works!</p>
+<div>
+    <h1>Lol</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Dame</th>
+                <th scope="col">Defent</th>
+                <th scope="col">speed</th>
+                <th scope="col">price</th>
+                <th scope="col">avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let champ of champs; index as i">
+                <!-- <app-champ [champName]="champ.name"></app-champ> -->
+                <th scope="row">{{i + 1}}</th>
+                <td class="color-blue">
+                    {{champ.name}}
+                </td>
+                <td>
+                    <app-table-dame [dame]="champ.dame"></app-table-dame>
+                </td>
+                <td>{{champ.defend}}</td>
+                <td>{{champ.speed}}</td>
+                <td>{{champ.price}}</td>
+                <td>
+                    <!-- <img src={{champ.avatar}} alt={{champ.avatar}} height="100"> -->
+                    <!-- <img [src]="champ.avatar" [alt]="champ.avatar" class="me-2" style="width: 100px"> -->
+                    <app-table-avatar [src]="champ.avatar" [price]="champ.price" ></app-table-avatar>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
