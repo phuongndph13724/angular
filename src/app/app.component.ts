@@ -45,7 +45,7 @@ export class AppComponent {
       dame: 65,
       defend: 32,
       speed: 320,
-      price: 6300,
+      price: 3100,
       avatar:
         'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt075d278529811445/5db05fde6af83b6d7032c8fe/RiotX_ChampionList_leesin.jpg?quality=90&width=250',
     },
